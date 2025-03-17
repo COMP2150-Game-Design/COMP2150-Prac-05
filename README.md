@@ -1,5 +1,5 @@
-# Week - Lab Name
-Short blurb about what today's lab is.
+# Week 05 - Level Design 1
+Today we will be moving from our Challenge design to turning these Challenges into encounters, these encounters into our level, and creating the connective tissue between these different elements.
 
 ## Tools used
 Today's task uses (but is not limited to):
