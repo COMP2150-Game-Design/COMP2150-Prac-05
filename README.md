@@ -1,6 +1,15 @@
 # Week 05 - Level Design 1
 Today we will be moving from our Challenge design to turning these Challenges into encounters, these encounters into our level, and creating the connective tissue between these different elements.
 
+## Notes
+### Capturing your design
+A big part of these tasks is about capturing your design as you make it. Not only will you be marked on your iteration and documentation, but it is also just really good practice to have. So far, we've been asking you to make notes and capture these in your repo. However, today we are going to be actually building some of the level design artefacts proper, so it is really important you are storing them in your design document. You may wish to open that file (`DesignDocument.md` in the assignment repo) and edit it as you go.
+
+### Take it easy
+This prac is going to involve a lot of different examples of prototyping tools and forms thrown out at you. Some of this is covered in the Week 5 lecture, and more in Week 6. However, the idea here is that we want to show you the breadth of ways you can use design thinking and iterative design processes to make your levels. So, when you get to the part where we are asking you to experiment, go easy on yourself. The point isn't for you to try them all, but for you to try enough to find what works for you.
+
+There is a lot to level design, hence why we cover it in two lectures. Don't be afraid to come back to some of these concepts next week.
+
 ## Tools used
 Today's task uses (but is not limited to):
 
@@ -45,23 +54,59 @@ One of the only prescribed forms of prototypes in the assignment is storyboards 
 * How does the player approach these elements? What do they observe? 
 * What are the broad-stroke responses they can make, and what are the consequences? E.g, the player misses the jump and hits the acid pit, so respawns and starts again.
 
-Don't get too hung up on the spatialisation of this just yet - you want to keep those constraints we mentioned before about movement and what the player can see in mind to stop you from going off the rails, but you will be working out the details later.
+Don't get too hung up on the spatialisation of this just yet - you want to keep those constraints we mentioned before about movement and what the player can see in mind to stop you from going off the rails, but you will be working out the details later. You can find an example of a storyboard here, depicting the sequence of using a defiblirator in the game <i>Dirty Bomb</i> (Image source: https://www.dirtybomb.com/news/the-design-of-dirty-bomb/):
+
+![A gameplay storyboard from the game Dirty Bomb.](images/DirtyBombStoryboard.png)
 
 Try to create two-three different encounters. You'll be coming back to this later in your design process (probably outside of class!), so let's not get too in the weeds here.
 
 ### Section 2 Encounters Design (30 min)
+It's now time to repeat your encounter design process, but instead for Section 2 of your level. These encounters will be a bit different: we can assume players have completed section 1, and are now more familiar with the mechanics, so it is time to introduce some more interesting challenges for them to sink their teeth into.
 
+The challenges you built in last week's class can really help you here. As you spent last week's class exploring different types of challenges, you will now have an idea as to what you want this to look like in your level. See which challenges from your test scenes (or other notes) can be turned into encounters. Try drafting another two-three encounters.
 
-### Storyboarding encounters (15 min)
+#### Other prototype methods
+While we ask for storyboards for all of the encounters where the player is introduced to the different elements, this is the only section where we prescribe this method of prototyping.
 
-## Topological Design (30 min)
+There are many different ways to prototype at this "narrative" layer. Don't be afraid to experiment. Some ideas:
+* Short paragraphs that tell the "narrative" of the encounter. Maybe put together in a tool like [Twine](https://twinery.org)
+* Greyboxed encounters in a test scene that show the layout of an encounter but aren't specific about exact geometry.
+* Annotated screenshots where a still of the encounter has been created, then drawn over with arrows and notes to indicate movement, etc.
+* "Lego" prototypes that use blocks, toys or similar existing artefacts to map out an encounter. The image below shows an example of this (source: https://www.workshopper.com/post/design-thinking-phase-4-everything-you-need-to-know-about-prototyping)
 
-## Section 3 (30 min)
+![An image of a prototype using lego.](images/legoprototype.png)
 
-![Image goes here!](images/sample.png)
+We really encourage experimentation here and drawing on what you know. Get messy, and reflect on your findings in your design document!
 
-### Reflect
-Include a section on reflection to ensure students are doing something with their knowledge in the moment.
+## Molecule Diagram (30 min)
+At this stage, you should have 4-6 different encounters. It's time to "zoom out" on your design and consider your level from a topological perspective. 
+
+The topological view of your level is concerned with the general arrangement of the different encounters in your level, and often is done in a "molecule diagram" or other similar node based format. 
+
+When working with a topological view of your game, the key here is being able to step back and take a look at how your player moves through (and sees) your level via the arrangement of your encounters. As such, we recommend prototyping this using something easily modifable. Nodes in Powerpoint, [Figma](https://www.figma.com/) or [draw.io](https://app.diagrams.net/) are handy. Or sticky notes if you've got a big enough wall and some thread to create links between them!
+
+Your topological view should illustrate how a player gets from one point to another without worrying about the specifics. E.g., it should illustrate they have to move down along a winding path, but not the actual structure of that path. Here are some examples from former Ubisoft developer Iuliu-Cosmin Oniscu (source: https://iuliu-cosmin-oniscu.medium.com/molecule-design-439194cc82bf)
+
+![An image of an example molecule diagram](images/moleculediagram1.png)
+
+![An image of an example molecule diagram](images/moleculediagram2.png)
+
+Remember, the player should be introduced to all the features in section 1 before being tested on them in section 2. So, while we do want some non-linearity, you really want to consider how you will get players from section 1 to section 2 (hint: how do we say to do this in the Week 4 lecture?).
+
+## Iteration and connectivity (30 min)
+
+By now, you've got a pretty good picture of how some of your level is going to hang together. You've identified some encounters, and in creating your molecule diagram possibly refined them or identified where you need more or less of them.
+
+For the rest of the time, continue your design work being guided by the following provocations:
+
+<b>Iteration</b><br>
+Now that you have your design in both a micro (encounters) and macro (topology) view, is it working? What could be changed? Do the encounters need re-arranging, or are further tweaks needed here? Don't be afraid to "zoom in and out" on your design by going back and forth between modifying encounters and changing their place in the big picture.
+
+<b>Connectivity</b><br>
+So far we've focused on the encounters that are teaching and challenging the player. What about everything in between? Are there opportunities for the player to stop and look out upon the world? Can they see upcoming challenges as they travel by them on a moving platform? Are there examples of both positive and negative space throughout your design? Start thinking about these kinds of encounters and how they might fit into your level to modulate your dramatic arc.
+
+<b>Section 3</b><br>
+You might want to think a little about Section 3. Sometimes it can be a good idea to have a rough idea of the whole picture and where you want the player to end up, as this will allow you to think about how you can really teach them everything they need to know in Section 1, and properly test them in Section 2 to make Section 3 a big payoff.
 
 ## Next Week
-Next week you will move from these storyboards and other prototypes to work on your level from a geometric perspective, both in and out of engine.
+Next week we will work on moving to the geometry of our level, mapping out exactly what the level looks like both on paper and in engine.
