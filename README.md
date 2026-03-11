@@ -10,9 +10,9 @@ Today's task uses (but is not limited to):
 * Whatever prototyping tools you want!
   
 ## Assignment deliverable
-Today, you will be creating a geometric prototype of your level, as well as completing the final section of the level. Don't worry if you don't get it all perfect - the idea is to have fully-sketched out your level by the end of today so you can work on further iteration.
+Today, you will be creating a geometric prototype of your level, as well as completing the final section of the level. Don't worry if you don't get it all perfect - the idea is to have fully sketched out your level by the end of today so you can work on further iteration.
 
-## Section 3 (30 min)
+## Section 3 (20 min)
 Depending on how you went last week, you might already have the plans for Level 3. If not, now is a good time to work on this section.
 
 Go through the steps of encounter prototyping from last week. You should now have a bit of a better idea about the kind of prototyping that works for you, but may also want to experiment a bit more.
@@ -20,10 +20,10 @@ Go through the steps of encounter prototyping from last week. You should now hav
 Whatever you do, <b>Make sure you are capturing your prototypes</b>. The highest marks for this assignment require multiple prototypes, and these can also all potentially be a case study for your Design & UX Journal Task.
 
 ## Revisiting Topology (10 min)
-Have another look at your molecule diagrams from last week. Do you still think they hold up? Is there anything you would change now that you've had a bit of time to think about it all? Do a sanity check and spend a bit more time on this before moving on.
+Have another look at your molecule diagrams from last week. Do you still think they hold up? Is there anything you would change now that you've had a bit of time to think about it all? Do a sanity check and spend more time on this before moving on.
 
-## Level Geometry (20 min)
-With all your sections constructed, it's time to build a geometry layer prototype. The geometry layer, as discussed in the lecture, is all about how the level fits together. Perhaps the most technical of all prototypes, this is where we need to consider the precise layout and arrangement of objects in our level. Depending on your workflow thus far, your process here might look different. However, we recommend having a go at a variety of methods while here in class, so that you can best find your grove.
+## Level Geometry (30 min)
+With all your sections constructed, it's time to build a geometry layer prototype. The geometry layer, as discussed in the lecture, is all about how the level fits together. Perhaps the most technical of all prototypes, this is where we need to consider the precise layout and arrangement of objects in our level. Depending on your workflow thus far, your process here might look different. However, we recommend having a go at a variety of methods while here in class, so that you can best find your groove.
 
 Some steps you might take:
 
@@ -47,15 +47,15 @@ Regardless of your approach (or approaches), ask yourself:
 
 Be brutal about your level and how it fits together.
 
-## Materials and lighting (30 min)
+## Materials and lighting (20 min)
 While the aesthetic design of a level is a whole job in and of itself, some consideration to the lighting and materials in your level will help you make sure you are guiding (or distracting) your player in the ways you want.
 
 ### Materials
-In order to make sure your level is compatible with the whole Cryoshock project, you are not to make new materials for this assignment. However, in the COMP2150 > Generic folder, you'll find all the materials used in the project, as well as some additional ones. These materials will allow you to add matte colours, glowing lights, or change certain walls, etc. see-through.
+In order to make sure your level is compatible with the whole Cryoshock project, you are not to make new materials for this assignment. However, in the `COMP2150 > Generic` folder, you'll find all the materials used in the project, as well as some additional ones. These materials will allow you to add matte colours, glowing lights, or make objects see-through.
 
-To change the material on an object, select its mesh in the outliner (generally a child object), and scroll down to the "Materials" tab. You can then drag-and-drop different materials, or change them from the drop-down menu. Experiment with how different materials change the mood of the game and what they communicate to the player about where to go and what to do.
+To change the material on an object, select its mesh in the outliner (generally a child object), and scroll down to the "Materials" tab. You can then drag-and-drop different materials, or change them from the drop-down menu. Experiment with how different materials change the mood of the game and what they communicate to the player about where to go and what to do. Note that some scripted lighting effects are hardcoded, and cannot be changed.
 
-![TODO: Material changing image.](images/materials.png)
+![Material changing image.](images/materials.png)
 
 ### Lighting
 Lighting is not only important for guiding your player, but also just allowing them to see what's going on. The scene has been set-up with a directional light, which acts as a sort of sun light object.  However, if you are going to be making closed off areas, you'll probably need to start introducing more lights (a tunnel, for instance, will quickly become very dark!). 
@@ -68,20 +68,18 @@ To place lights in your scene, press the Add button (Cube with a green plus), th
 
 <b>Spotlight:</b> Projects light against a surface from a single point, like an electric torch.
 
-<b>Rect Light:</b> Emits light volumetrically within a shape. Useful for lighting large areas uniformally.
+<b>Rect Light:</b> Emits light volumetrically within a shape. Useful for lighting large areas uniformly.
 
-When you cretae a light, there are a number of properties such as colour and intensity you can modify. It can be a bit overwhelming, but we recommend playing with both intensity and colour, and seeing what kind of moods you can create.
+When you create a light, there are a number of properties such as colour and intensity you can modify. It can be a bit overwhelming, but we recommend playing with both intensity and colour, and seeing what kind of moods you can create.
 
-![TODO: Image of light settings](images/lightsettings.png)
+![Image of light settings](images/lightsettings.png)
 
-Importantly, however, lighting can quickly get out of hand, especially with Unreal's additivel ighting approach. Place lights deliberately and try to use as few lights as possible.
+Importantly, however, lighting can quickly get out of hand, especially with Unreal's additive lighting approach. Place lights deliberately and try to use as few as possible.
 
 Note that there is no assignment specification around lighting and materials specifically. We will not be evaluating your artistic skills in this way. However, we will be looking generally at how well your level communicates to the player what they need to do and creates an engaging experience, and some manipulation of lighting and materials may be a part of that.
 
-## Playtesting nad back and forth prototyping (Until end)
-In the remaining time, swap around with other students and play each other's games. Pay careful attention to how other players move about your level - are they progressing the way you planned? Are any hidden sections or alternative routes being ignored? Does the level seem to nicely guide the player through each section with room for exploration?
-
-You want to think about the following questions for your level:
+## Playtesting and back and forth prototyping (Until end)
+In the remaining time, swap around with other students and play each other's games. Pay careful attention to how other players move about your level. You want to think about the following questions for your level:
 * Is there a natural path through the level? Is this the journey I want the player to go on, or are they missing things?
 * Do my encounters nicely build on one another? Is the player ever put in a situation where they might not know what to do/how to progress?
 * Are there any unintended challenges due to quirks in my level design? E.g., a jump that is supposed to just get from one part of the map to another is difficult because of the platforms around it. How do I fix this?
