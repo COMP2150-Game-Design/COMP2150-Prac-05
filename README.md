@@ -48,7 +48,35 @@ Regardless of your approach (or approaches), ask yourself:
 Be brutal about your level and how it fits together.
 
 ## Materials and lighting (30 min)
-[TODO: New section]
+While the aesthetic design of a level is a whole job in and of itself, some consideration to the lighting and materials in your level will help you make sure you are guiding (or distracting) your player in the ways you want.
+
+### Materials
+In order to make sure your level is compatible with the whole Cryoshock project, you are not to make new materials for this assignment. However, in the COMP2150 > Generic folder, you'll find all the materials used in the project, as well as some additional ones. These materials will allow you to add matte colours, glowing lights, or change certain walls, etc. see-through.
+
+To change the material on an object, select its mesh in the outliner (generally a child object), and scroll down to the "Materials" tab. You can then drag-and-drop different materials, or change them from the drop-down menu. Experiment with how different materials change the mood of the game and what they communicate to the player about where to go and what to do.
+
+![TODO: Material changing image.](images/materials.png)
+
+### Lighting
+Lighting is not only important for guiding your player, but also just allowing them to see what's going on. The scene has been set-up with a directional light, which acts as a sort of sun light object.  However, if you are going to be making closed off areas, you'll probably need to start introducing more lights (a tunnel, for instance, will quickly become very dark!). 
+
+To place lights in your scene, press the Add button (Cube with a green plus), then scroll to Lights and select from the list. A deep dive into lighting types is for another time, but as a quick guide:
+
+<b>Direction Light:</b> Acts as a sort of sunlight, projecting light into the scene from a particular direction. You generally don't want too many of these (one is standard, two is extra).
+
+<b>Point Light:</b> Emits light in all directions, but from a particular point. Useful for lamps, etc.
+
+<b>Spotlight:</b> Projects light against a surface from a single point, like an electric torch.
+
+<b>Rect Light:</b> Emits light volumetrically within a shape. Useful for lighting large areas uniformally.
+
+When you cretae a light, there are a number of properties such as colour and intensity you can modify. It can be a bit overwhelming, but we recommend playing with both intensity and colour, and seeing what kind of moods you can create.
+
+![TODO: Image of light settings](images/lightsettings.png)
+
+Importantly, however, lighting can quickly get out of hand, especially with Unreal's additivel ighting approach. Place lights deliberately and try to use as few lights as possible.
+
+Note that there is no assignment specification around lighting and materials specifically. We will not be evaluating your artistic skills in this way. However, we will be looking generally at how well your level communicates to the player what they need to do and creates an engaging experience, and some manipulation of lighting and materials may be a part of that.
 
 ## Playtesting nad back and forth prototyping (Until end)
 In the remaining time, swap around with other students and play each other's games. Pay careful attention to how other players move about your level - are they progressing the way you planned? Are any hidden sections or alternative routes being ignored? Does the level seem to nicely guide the player through each section with room for exploration?
